@@ -32,5 +32,5 @@ let anoNascimento;
 indiceMassaCorporal = peso / (alturaEmM * alturaEmM);
 anoNascimento = 2022 - idade;
 
-console.log(nome, sobrenome, 'tem', idade, 'anos, pesa', peso, 'kg, tem', alturaEmM, 'de altura e seu IMC é de', indiceMassaCorporal + '.');
-console.log(nome, sobrenome, 'nasceu em', anoNascimento + '.');
+console.log(`${nome} ${sobrenome} tem ${idade} anos, pesa ${peso} kg, tem ${alturaEmM} de altura e seu IMC é de ${indiceMassaCorporal}.`);
+console.log(`${nome} ${sobrenome} nasceu em ${anoNascimento}.`);
