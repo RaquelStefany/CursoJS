@@ -11,10 +11,24 @@ array[0] = 'Luiz';
 const pessoal = {
     nome: 'Raquel',
     sobrenome: 'Rodrigues',
-    idade: 19
+    idade: 19,
+    
+    fala(){
+        console.log(`${this.nome} ${this.sobrenome} tem ${this.idade} anos...`);
+    },
+
+    incrementaIdade(){
+        this.idade++;
+    }
 };
 
 console.log(pessoal.nome);
+
+pessoal.fala();
+pessoal.incrementaIdade();
+pessoal.fala();
+
+console.log('');
 
 // Função para criar um array com atributos
 function criaPessoa(nome, sobrenome, idade){
